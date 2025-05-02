@@ -1,46 +1,33 @@
-# ⚙️ MKT3434_2025
+# MKT3434_2025 – Geliştirilmiş ML GUI
 
-**MKT3434 Course of Dept. Mechatronics Eng. at YTU instructed by Ertugrul Bayraktar**
+# Eklenen Özellikler
 
----
+# PCA ve LDA ile boyut indirgeme
+# k-Means clustering + Elbow yöntemi
+# t-SNE ve UMAP ile 2D/3D projeksiyonlar
+# Plotly ile interaktif görselleştirme
+# Silhouette Score hesaplama
+# k-Fold Cross Validation (k seçilebilir)
 
-## 🚀 Overview
 
-This repository provides a base GUI framework for students to develop and integrate machine learning methods. The GUI is built using PyQt6 and supports various classical machine learning and deep learning techniques. Students will extend this GUI by adding necessary functionalities over time.
+# Kullanım
 
----
+#1. `21067022.py` dosyasını çalıştırın:
+#    ```bash
+#    python 21067022.py
+#    ```
 
-## 📚 Long-Term Homework Instructions
+#2. Dataset yükleyin ("Irish Dataset" seçeneği ile `iris_dataset.csv` )
 
-Students are required to modify and enhance this GUI incrementally every three weeks. The objective is to build a fully functional and improved machine learning GUI.
+#3. Modeli seçin → Train → Değerlendirme/visualization sekmeleri aktif olur. (bu adımı yapamadım)
 
-### 🎯 Key Requirements:
+# Gereken Kütüphaneler
 
-*   **Insert Necessary Methods:** Integrate missing machine learning methods within the provided GUI framework.
-*   **Enhance the GUI:** The default interface is provided, but students are encouraged to improve usability and design.
-*   **Ensure Data and Method Appropriateness:** The datasets and algorithms should be compatible within the GUI structure.
-*   **Implement Training and Testing Processes:** Correctly implement model training and evaluation workflows.
-*   **Regular Submissions:** Submit updates every three weeks through Google Classroom for this course.
+#pip install scikit-learn pandas numpy matplotlib plotly umap-learn
+#pip install plotly
+#pip install umap-learn
 
----
-
-## 🤝 Repository and Collaboration
-
-Students should fork this repository and develop their versions.
-
-Regular commits and documentation updates are expected.
-
----
-
-## 🏁 Getting Started
-
-### ⚙️ Prerequisites:
-
-Ensure you have the following installed:
-
-*   Python 3.8+
-
-### 📦 Required dependencies:
-
-```bash
-pip install numpy pandas matplotlib PyQt6 scikit-learn tensorflow torch torchvision torchaudio opencv-python opencv-contrib-python scipy fastai kornia
+# Notlar:
+# LDA sadece sınıflandırma datasetleriyle çalışır (örnek: Iris).
+# t-SNE/UMAP çalıştırmadan önce 2D/3D seçimini yapın.
+# Plotly grafikler tarayıcıda açılır.
